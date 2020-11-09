@@ -1,0 +1,169 @@
+1.program:
+package main
+import "fmt"
+const KI = 6.78
+func main() {
+    const VIK = "haritha"
+    fmt.Println("Hello", VIK)
+    fmt.Println("Happy", KI, "Day")
+    const Correct= false
+    fmt.Println("Go rules?", Correct)
+}
+output:
+Hello haritha
+Happy 6.78 Day
+Go rules? false
+
+2.program:
+package main
+import "fmt"
+func main() {
+    const A= "JRV"
+    var B = "Haritha"
+    var helloWorld = A+ " " + B
+    helloWorld += "!"
+    fmt.Println(helloWorld) 
+    fmt.Println(A == "JRV")   
+    fmt.Println(B < A) 
+}
+output:
+JRV Haritha!
+true
+true
+
+3.program:
+package main
+import "fmt"
+const Ki = 4.23
+func main() {
+ const trueConst = true
+    type myBool bool
+    var defaultBool = trueConst 
+    var customBool myBool = trueConst 
+    fmt.Println(defaultBool)
+    fmt.Println(customBool)
+}
+output:
+true
+true
+
+4.program
+package main
+import "fmt"
+func main() {
+   const LENGTH int = 30
+   const WIDTH int = 9   
+   var area int
+   area = LENGTH * WIDTH
+   fmt.Printf("value of area : %d", area)   
+}
+output:
+value of area : 270
+
+5.program:
+package main
+import (  
+    "fmt"
+)
+func main() {  
+    const (
+        name = "haritha"
+        age = 25
+        country = "Rajampet"
+    )
+    fmt.Println(name)
+    fmt.Println(age)
+    fmt.Println(country)
+output:
+haritha
+25
+rajampet
+
+6.program:
+package main
+import (  
+    "fmt"
+)
+
+func main()
+ {  
+    const a = 70
+    fmt.Println(a)
+}
+output:
+70
+
+7.program:
+package main
+import "fmt"
+const PRODUCT string = "Rajampet"
+const PRICE = 1000
+func main() {
+	fmt.Println(PRODUCT)
+	fmt.Println(PRICE)
+}
+output:
+Rajampet
+1000
+
+8.program:
+package main
+import "fmt"
+const (
+	
+	QUANTITY = 60
+	PRODUCT  = "shop"
+	PRICE    = 70.12
+	STOCK  = false
+)
+
+func main() {
+	fmt.Println(QUANTITY)
+	fmt.Println(PRICE)
+	fmt.Println(PRODUCT)
+	fmt.Println(STOCK)
+}
+output:
+60
+70.12
+shop
+false
+
+9.program:
+package main
+import "fmt"
+func main() {
+    const name, country = "nellore", "India"
+    const (
+        stockName  string  = "TCS"
+        stockPrice float64 = 108.90
+    )
+    fmt.Println(stockName, stockPrice)
+        fmt.Println(name, country)
+}
+output:
+TCS 108.9
+nellore India
+
+10.program:
+package main
+import "fmt"
+const (
+    year     = 365
+    leapYear = int32(366)
+)
+
+func main() {
+    hours := 24
+    minutes := int32(60)
+    fmt.Println(hours * year)
+    fmt.Println(minutes * year)
+    fmt.Println(minutes * leapYear)
+}
+output:
+8760
+21900
+21960
+
+
+
